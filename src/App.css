@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+*{
+  font-family: Roboto;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -26,6 +29,17 @@
 
 .App-link {
   color: #61dafb;
+}
+/* Chrome, Safari, Edge, Opera */
+.answer::-webkit-outer-spin-button,
+.answer::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.answer {
+  -moz-appearance: textfield;
 }
 
 @keyframes App-logo-spin {

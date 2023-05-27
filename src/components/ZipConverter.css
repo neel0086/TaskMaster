@@ -1,0 +1,27 @@
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: whitesmoke; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.809); 
+  }
+.table_body{
+    max-height:73.2vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* table-layout: fixed; */
+    
+}
