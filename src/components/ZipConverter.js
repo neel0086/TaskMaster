@@ -89,11 +89,11 @@ const ZipConverter = () => {
 
 
   return (
-    <div className='h-screen w-screen text-Roboto overflow-x-hidden  pb-40 mt-5 bg-gradient-to-tr from-neutral-700 via-neutral-700 to-neutral-700'>
+    <div className='h-screen w-screen text-Roboto overflow-x-hidden  pb-40 mt-5 bg-white from-neutral-700 via-neutral-700 to-neutral-700'>
       <section className="flex justify-around w-full mx-4 p-6 mx-auto  rounded-md shadow-md dark:bg-gray-800 mt-20">
 
         <div className="flex flex-col w-5/12">
-          <h1 className='text-white mb-2 text-xl invert-0.2'>FILE UPLOAD</h1>
+          <h1 className='text-black mb-2 text-xl invert-0.2'>FILE UPLOAD</h1>
           <label
             htmlFor="dropzone-file"
             className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
@@ -115,12 +115,12 @@ const ZipConverter = () => {
               multiple
             />
           </label>
-          <span className='text-white invert-0.4'>{fileFolder == false ? "File Uploaded Succesfully" : " "}</span>
+          <span className='text-black invert-0.4'>{fileFolder == false ? "File Uploaded Succesfully" : " "}</span>
         </div>
 
         {/* FOLDER  */}
         <div className="flex flex-col w-5/12">
-          <h1 className='text-white mb-2 text-xl invert-0.2'>FOLDER UPLOAD</h1>
+          <h1 className='text-black mb-2 text-xl invert-0.2'>FOLDER UPLOAD</h1>
           <label
             htmlFor="folder"
             className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
@@ -144,7 +144,7 @@ const ZipConverter = () => {
             />
           </label>
 
-          <span className='text-white invert-0.4'>{fileFolder == true ? "Folder Uploaded Succesfully" : " "}</span>
+          <span className='text-black invert-0.4'>{fileFolder == true ? "Folder Uploaded Succesfully" : " "}</span>
         </div>
       </section>
       <section className=" w-100 mx-2 mt-12 px-6 mx-auto flex items-center">
@@ -153,13 +153,13 @@ const ZipConverter = () => {
           <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{width: `${progressWidth}`}}> {progressWidth}</div>
         </div>
 
-        <button onClick={(e) => { handleZip() }} className="float-right px-4 py-2 text-white text-xl bg-cyan-700 hover:bg-zinc-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm ">
+        <button onClick={(e) => { handleZip() }} className="float-right px-4 py-2 text-white text-xl bg-blue-500 hover:bg-zinc-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm ">
           Convert
 
         </button>
       </section>
       <section className=" w-100 mx-2 mt-4 px-6 pb-6 mx-auto  rounded-md shadow-md dark:bg-gray-800 ">
-        <h2 className="text-white font-Roboto text-lg mb-2">Uploaded Files:</h2>
+        <h2 className="text-black font-Roboto text-lg mb-2">Uploaded Files:</h2>
 
         <div className="relative table_body w-full  shadow-md sm:rounded-lg">
           <table className="w-screen text-sm text-left text-gray-500 dark:text-gray-400">

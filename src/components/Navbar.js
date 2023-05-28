@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Transition } from '@headlessui/react';
 import { HiOutlineX, HiMenuAlt3 } from 'react-icons/hi'
 import logo from "../assets/logo.png";
-import ColorIcon from "../assets/color.png";
 
 
 
@@ -27,23 +26,23 @@ const Navbar = () => {
     
     return (
         // style={{background:`${selectedColor}`}}
-        <nav  className="bg-transparent fixed shadow-md shadow-slate-600 w-screen text-gray-100 backdrop-blur-lg z-50 py-3">
+        <nav  className="bg-white fixed shadow-md shadow-white-600 w-screen text-black  z-50 py-3">
 
             <div className="flex items-center justify-between  px-10">
                 <div className="flex space-x-10 align-center">
-                    <Link to="/" className="flex gap-2 text-2xl font-Roboto text-white text-lg  items-center sm:flex ">
+                    <Link to="/" className="flex gap-2 text-2xl font-Roboto text-black font-semibold text-lg  items-center sm:flex ">
                         <img className='w-16 mr-2 ' alt='logo' src={logo} />
                         <span>Smart Rate</span>
                     </Link>
                     <ul className="hidden  items-center md:flex text-lg tracking-widest ">
                         <li className='hover:invert-0.4'>
-                            <Link className='mx-1 px-2 font-Roboto text-white text-lg' to='/zip_converter'>ZipConverter</Link>
+                            <Link className='mx-1 px-2 font-Roboto text-black font-semibold text-lg' to='/zip_converter'>ZipConverter</Link>
                         </li>
                         <li className='hover:invert-0.4'>
-                            <Link className='mx-1 px-2 font-Roboto text-white text-lg' to='/photo_sizing'>PhotoSizing</Link>
+                            <Link className='mx-1 px-2 font-Roboto text-black font-semibold text-lg' to='/photo_sizing'>PhotoSizing</Link>
                         </li>
                         <li className='hover:invert-0.4'>
-                            <Link className='mx-1 px-2 font-Roboto text-white text-lg' to='/pdf_converter'>PdfConverter</Link>
+                            <Link className='mx-1 px-2 font-Roboto text-black font-semibold text-lg' to='/pdf_converter'>PdfConverter</Link>
                         </li>
 
 
@@ -86,24 +85,24 @@ const Navbar = () => {
                         <div className="md:hidden " id="mobile-menu">
                             <div
                                 ref={ref}
-                                className="dark:bg-transparent dark:text-white mx-4 pt-4 pb-4 space-y-1"
+                                className="dark:bg-transparent dark:text-black font-semibold mx-4 pt-4 pb-4 space-y-1"
                             >
                                 <Link
                                     to="/"
-                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-black font-semibold block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     ZipConverter
                                 </Link>
 
                                 <Link
                                     to="/photo_sizing"
-                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-black font-semibold block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     PhotoSizing
                                 </Link>
                                 <Link
                                     to="/pdf_converter"
-                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-black font-semibold block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     PdfConverter
                                 </Link>
